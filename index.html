@@ -1,219 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MTech – Redesign Proposal</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, sans-serif;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0052cc;
-    }
-
-    /* HEADER PLACEHOLDER */
-    .header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    /* HERO */
-    .hero {
-      padding: 80px 20px;
-      background: #f8fafc;
-    }
-
-    .hero-container {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      color: #4a5568;
-      max-width: 500px;
-    }
-
-    .hero img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    /* CLIENTS */
-    .clients {
-      padding: 60px 20px;
-      border-top: 1px solid #e5e7eb;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .clients-container {
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .clients h2 {
-      font-size: 20px;
-      margin-bottom: 30px;
-      color: #6b7280;
-      font-weight: 500;
-    }
-
-    .client-logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      font-weight: 600;
-      color: #111827;
-    }
-
-    /* BLOG */
-    .blog {
-      padding: 80px 20px;
-    }
-
-    .blog-container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .blog h2 {
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
-
-    .posts {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-
-    .post {
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      padding: 30px;
-      background: #fff;
-    }
-
-    .post h3 {
-      margin-top: 0;
-      font-size: 20px;
-    }
-
-    .post p {
-      color: #6b7280;
-    }
-
-    /* FOOTER PLACEHOLDER */
-    .footer {
-      background: #f3f4f6;
-      padding: 50px 20px;
-      text-align: center;
-      color: #6b7280;
-      font-size: 14px;
-      border-top: 3px dashed #d1d5db;
-    }
-
-    @media (max-width: 900px) {
-      .hero-container {
-        grid-template-columns: 1fr;
-      }
-
-      .posts {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTech - Developing Exemplary Solutions</title>
+    <link rel="stylesheet" href="./Opción_1/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Hero Section -->
+    <section class="hero-section" data-testid="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-testid="hero-title">MTech</h1>
+                    <p class="hero-subtitle" data-testid="hero-subtitle">Developing exemplary solutions</p>
+                    
+                    <div class="social-links" data-testid="social-links-container">
+                        <a href="#" class="social-link" aria-label="Facebook" data-testid="social-link-facebook" style="--social-color: #1877f2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter" data-testid="social-link-twitter" style="--social-color: #1da1f2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                            <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn" data-testid="social-link-linkedin" style="--social-color: #0a66c2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
 
-  <!-- HEADER -->
-  <div class="header">
-    [ Existing Header – Not Modified ]
-  </div>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-container">
-      <div>
-        <h1>Developing exemplary solutions</h1>
-        <p>
-          MTech is a technology consulting company specializing in web development,
-          migrations, and front-end solutions for organizations that need reliable,
-          scalable platforms.
-        </p>
-      </div>
-
-      <div>
-        <img src="./Opción_2/image.png" alt="Placeholder image">
-      </div>
-    </div>
-  </section>
-
-  <!-- CLIENTS -->
-  <section class="clients">
-    <div class="clients-container">
-      <h2>Trusted by organizations like</h2>
-      <div class="client-logos">
-        <span>Tag1</span>
-        <span>North Studio</span>
-        <span>Accel Solutions</span>
-        <span>Healthcare Without Harm</span>
-        <span>Operation Mobilization</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section class="blog">
-    <div class="blog-container">
-      <h2>Latest insights</h2>
-
-      <div class="posts">
-        <div class="post">
-          <h3>Planning a successful Drupal migration</h3>
-          <p>Key considerations and best practices when migrating complex platforms.</p>
+                <div class="hero-visual" data-testid="hero-visual">
+                    <div class="device-mockup">
+                        <div class="device-screen"></div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card card-1"></div>
+                        <div class="floating-card card-2"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="post">
-          <h3>Front-end performance for enterprise sites</h3>
-          <p>How modern front-end techniques improve user experience and scalability.</p>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" data-testid="portfolio-section">
+        <div class="portfolio-container">
+            <div class="portfolio-header">
+                <h2 class="portfolio-title" data-testid="portfolio-title">Portfolio</h2>
+                <p class="portfolio-description" data-testid="portfolio-description">
+                    Our comprehensive suite of development services
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-testid="portfolio-card-0">
+                    <div class="portfolio-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 class="portfolio-card-title">Static HTML File Migrations</h3>
+                    <p class="portfolio-card-description">Seamless migration of your static websites with zero downtime and optimal performance.</p>
+                    <div class="portfolio-card-hover-indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-testid="portfolio-card-1">
+                    <div class="portfolio-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                    </div>
+                    <h3 class="portfolio-card-title">SQL Dump Migration</h3>
+                    <p class="portfolio-card-description">Safe and efficient database migration services ensuring data integrity throughout the process.</p>
+                    <div class="portfolio-card-hover-indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-testid="portfolio-card-2">
+                    <div class="portfolio-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+                    </div>
+                    <h3 class="portfolio-card-title">Theming & Front-end Design</h3>
+                    <p class="portfolio-card-description">Modern, responsive design solutions that elevate your brand and enhance user experience.</p>
+                    <div class="portfolio-card-hover-indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-website" data-testid="example-website">
+                <a href="#" class="example-link" data-testid="example-website-link">
+                    <span>View Example Website</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+            </div>
+
+            <!-- Twitter Feed Placeholder -->
+            <div class="twitter-feed" data-testid="twitter-feed">
+                <div class="twitter-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    <span>Latest Updates</span>
+                </div>
+                <div class="twitter-content">
+                    <p>Follow us on social media for the latest news and updates about our projects and services.</p>
+                    <a href="#" class="twitter-follow-btn" data-testid="twitter-follow-button">
+                        Follow @MTech
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="post">
-          <h3>Why open source matters for long-term growth</h3>
-          <p>How Drupal and open ecosystems support sustainable digital platforms.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER PLACEHOLDER -->
-  <div class="footer">
-    [ Existing content below – video, recordings, etc. – Not Modified ]
-  </div>
-
+    <script src="./Opción_1/main.js"></script>
 </body>
 </html>

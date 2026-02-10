@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MTech – Redesign Proposal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0052cc;
+    }
+
+    /* HEADER PLACEHOLDER */
+    .header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 20px;
+      background: #f8fafc;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #4a5568;
+      max-width: 500px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    /* CLIENTS */
+    .clients {
+      padding: 60px 20px;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .clients-container {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .clients h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    .client-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    /* BLOG */
+    .blog {
+      padding: 80px 20px;
+    }
+
+    .blog-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .blog h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .post {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 30px;
+      background: #fff;
+    }
+
+    .post h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .post p {
+      color: #6b7280;
+    }
+
+    /* FOOTER PLACEHOLDER */
+    .footer {
+      background: #f3f4f6;
+      padding: 50px 20px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+      border-top: 3px dashed #d1d5db;
+    }
+
+    @media (max-width: 900px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .posts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    [ Existing Header – Not Modified ]
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
+      <div>
+        <h1>Developing exemplary solutions</h1>
+        <p>
+          MTech is a technology consulting company specializing in web development,
+          migrations, and front-end solutions for organizations that need reliable,
+          scalable platforms.
+        </p>
+      </div>
+
+      <div>
+        <img src="./Opción_2/image.png" alt="Placeholder image">
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="clients">
+    <div class="clients-container">
+      <h2>Trusted by organizations like</h2>
+      <div class="client-logos">
+        <span>Tag1</span>
+        <span>North Studio</span>
+        <span>Accel Solutions</span>
+        <span>Healthcare Without Harm</span>
+        <span>Operation Mobilization</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog">
+    <div class="blog-container">
+      <h2>Latest insights</h2>
+
+      <div class="posts">
+        <div class="post">
+          <h3>Planning a successful Drupal migration</h3>
+          <p>Key considerations and best practices when migrating complex platforms.</p>
+        </div>
+
+        <div class="post">
+          <h3>Front-end performance for enterprise sites</h3>
+          <p>How modern front-end techniques improve user experience and scalability.</p>
+        </div>
+
+        <div class="post">
+          <h3>Why open source matters for long-term growth</h3>
+          <p>How Drupal and open ecosystems support sustainable digital platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER PLACEHOLDER -->
+  <div class="footer">
+    [ Existing content below – video, recordings, etc. – Not Modified ]
+  </div>
+
+</body>
+</html>
